@@ -27,6 +27,12 @@ npm run build
 
 GitHub Pages workflow가 포함되어 있습니다. `main` 브랜치에 push하면 자동으로 배포됩니다.
 
+## 공유 썸네일
+
+소셜/메신저 공유 썸네일은 `public/og-image.png`를 사용합니다.
+
+GitHub Pages 기본 주소는 GitHub 사용자명이 URL에 포함됩니다. 사용자명을 숨기려면 별도 도메인을 구입해 GitHub Pages custom domain으로 연결하거나, 단축 URL 서비스를 사용하세요.
+
 ## 이미지 규칙
 
 `public/thumbnails`에는 각 퀴즈에서 직접 만든 패러디 발그림만 복사해 사용합니다.

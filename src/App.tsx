@@ -72,6 +72,8 @@ const quizzes: Quiz[] = [
   },
 ];
 
+const siteUrl = 'https://jmleetpl.github.io/bad-quiz-hub/';
+
 function openQuiz(url: string) {
   window.location.href = url;
 }
@@ -86,7 +88,7 @@ export default function App() {
   const shareText =
     '못그린 퀴즈 모음 해봤냐?\n' +
     '영화/애니/귀신/한국영화 명장면을 일부러 못 그린 그림만 보고 맞히는 사이트임.\n' +
-    '점수 낮아도 그림 탓 가능: https://jmleetpl.github.io/bad-quiz-hub/';
+    `점수 낮아도 그림 탓 가능: ${siteUrl}`;
 
   const handleRandom = () => {
     const next = quizzes[Math.floor(Math.random() * quizzes.length)];
