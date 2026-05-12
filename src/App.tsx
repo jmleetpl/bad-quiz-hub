@@ -14,6 +14,8 @@ type Quiz = {
   accent: string;
 };
 
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 const quizzes: Quiz[] = [
   {
     id: 'global-movie',
@@ -22,7 +24,7 @@ const quizzes: Quiz[] = [
     count: '30문제',
     badge: '오리지널',
     url: 'https://jmleetpl.github.io/game/',
-    imageUrl: '/thumbnails/global-movie.png',
+    imageUrl: assetUrl('thumbnails/global-movie.png'),
     shareLine: '전세계 명작도 발그림 앞에서는 평등합니다.',
     accent: '#ffea00',
   },
@@ -33,7 +35,7 @@ const quizzes: Quiz[] = [
     count: '15문제',
     badge: '입문용',
     url: 'https://jmleetpl.github.io/animation-quiz/',
-    imageUrl: '/thumbnails/animation.png',
+    imageUrl: assetUrl('thumbnails/animation.png'),
     shareLine: '그림은 망했지만 추억은 멀쩡합니다.',
     accent: '#7cff8a',
   },
@@ -44,7 +46,7 @@ const quizzes: Quiz[] = [
     count: '15문제',
     badge: '한국 애니',
     url: 'https://jmleetpl.github.io/shinbi-ghost-quiz/',
-    imageUrl: '/thumbnails/shinbi.png',
+    imageUrl: assetUrl('thumbnails/shinbi.png'),
     shareLine: '무서워야 하는데 그림이 너무 하찮습니다.',
     accent: '#a98cff',
   },
@@ -55,7 +57,7 @@ const quizzes: Quiz[] = [
     count: '15문제',
     badge: '덕력 측정',
     url: 'https://jmleetpl.github.io/japan-anime-quiz/',
-    imageUrl: '/thumbnails/japan-anime.png',
+    imageUrl: assetUrl('thumbnails/japan-anime.png'),
     shareLine: '작화 붕괴가 아니라 의도된 붕괴입니다.',
     accent: '#ff9ed8',
   },
@@ -66,7 +68,7 @@ const quizzes: Quiz[] = [
     count: '15문제',
     badge: '충무로',
     url: 'https://jmleetpl.github.io/korean-movie-quiz/',
-    imageUrl: '/thumbnails/korean-movie.png',
+    imageUrl: assetUrl('thumbnails/korean-movie.png'),
     shareLine: '명장면을 이렇게 망쳐도 알아보면 진짜 팬입니다.',
     accent: '#74d7ff',
   },
